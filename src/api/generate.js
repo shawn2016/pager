@@ -24,13 +24,13 @@ router.post('/', async (req, res, next) => {
       props: page.config.props
     };
 
-    for (let i in page.components) {
-      let component = page.components[i];
-      if (component.project && component.name) {
-        let filePath = path.join(__dirname, '../publish', component.project, 'components', component.name, 'Main.js');
-        component.fileContent = await fs.readFile(filePath);
-      }
-    }
+    // for (let i in page.components) {
+    //   let component = page.components[i];
+    //   if (component.project && component.name) {
+    //     let filePath = path.join(__dirname, '../publish', component.project, 'components', component.name, 'Main.js');
+    //     component.fileContent = await fs.readFile(filePath);
+    //   }
+    // }
 
     // todo felix
     // props.body = ReactDOM.renderToStaticMarkup(<Body page={page} serverRendering={true} />);

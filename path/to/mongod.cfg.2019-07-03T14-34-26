@@ -1,0 +1,7 @@
+systemLog:
+    destination: file
+    path: path/to/mongod.cfg
+storage:
+    dbPath: path/to/db
+security:
+   authorization: enabled

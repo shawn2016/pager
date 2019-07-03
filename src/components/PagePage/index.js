@@ -482,7 +482,8 @@ class Page extends Component {
           onTouchTap={util.forceUpdate.bind(null, this)}
           key={component._id}
         >
-          {Com ? <Com {...component.config.props} /> : null}
+        000000000
+          {/* {Com ? <Com {...component.config.props} /> : null} */}
           <div className="add-component-btn-wrap">
             <FlatButton
               label="添加"
@@ -645,7 +646,7 @@ class Page extends Component {
             disabled={this.state.pageGenerating || this.state.pagePublishing}
           />
 
-          {/* <RaisedButton label="新窗口预览" secondary={true} onTouchTap={this.previewPage} disabled={this.state.pageGenerating || this.state.pagePublishing} /> */}
+          <RaisedButton label="新窗口预览" secondary={true} onTouchTap={this.previewPage} disabled={this.state.pageGenerating || this.state.pagePublishing} />
 
           <a href={this.state.publishUrl}>{this.state.publishUrl}</a>
         </div>
