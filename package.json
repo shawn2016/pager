@@ -76,7 +76,7 @@
     "jest-cli": "^0.7.1",
     "jscs": "^2.5.0",
     "less-loader": "^2.2.2",
-    "lodash.merge": "^3.3.2",
+    "lodash.merge": "^4.6.2",
     "mkdirp": "^0.5.1",
     "mongoose": "^4.2.6",
     "multer": "^1.1.0",
